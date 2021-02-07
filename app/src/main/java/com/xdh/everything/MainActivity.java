@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
          button = (Button) findViewById(R.id.button);
          button_j = (Button) findViewById(R.id.button2) ;
          Button button_f = (Button) findViewById(R.id.button3);
+         Button button_s = (Button) findViewById(R.id.button6);
          listView1 = (ListView) findViewById(R.id.listview1);
          textView = (TextView) findViewById(R.id.textView);
 
@@ -68,6 +69,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,FileActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        button_s.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,SqliteActivity.class);
                 startActivity(intent);
             }
         });

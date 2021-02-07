@@ -5,35 +5,31 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".SqliteActivity">
+
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
         <Button
-                android:text="Button"
+                android:text="添加一条数据到数据库"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/button"/>
-        <TextView
-                android:text="TextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/textView"/>
+                android:layout_height="wrap_content" android:id="@+id/button_add"/>
         <Button
-                android:text="Button"
+                android:text="修改"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/button2"/>
+                android:layout_height="wrap_content" android:id="@+id/button_mod"/>
         <Button
-                android:text="文件读写demo"
+                android:text="删除"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/button3"/>
+                android:layout_height="wrap_content" android:id="@+id/button_del"/>
         <Button
-                android:text="SQLite数据库DEMO"
+                android:text="查询"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/button6"/>
-        <ListView
+                android:layout_height="wrap_content" android:id="@+id/button_que"/>
+        <Button
+                android:text="清空"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" android:id="@+id/listview1">
-        </ListView>
+                android:layout_height="wrap_content" android:id="@+id/button_clr"/>
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
