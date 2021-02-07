@@ -6,8 +6,30 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
-    <ListView
+    <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" android:id="@+id/listview1"/>
+            android:layout_height="match_parent">
+        <Button
+                android:text="Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/button"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView"/>
+        <Button
+                android:text="Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/button2"/>
+        <Button
+                android:text="文件读写demo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/button3"/>
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/listview1">
+        </ListView>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

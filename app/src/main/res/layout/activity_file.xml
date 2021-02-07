@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FileActivity">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="文件读写演示DEMO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView4" android:textAlignment="center"
+                android:textSize="18sp"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/edit_content" android:hint="在此输入内容"/>
+        <Button
+                android:text="写入到文件"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/button_write"/>
+        <Button
+                android:text="读取文件内容"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/button_read"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
