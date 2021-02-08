@@ -30,6 +30,10 @@
                 android:text="SQLite数据库DEMO"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/button6"/>
+        <Button
+                android:text="layoutinflater示范DEMO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/button7"/>
         <ListView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" android:id="@+id/listview1">

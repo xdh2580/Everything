@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
          button_j = (Button) findViewById(R.id.button2) ;
          Button button_f = (Button) findViewById(R.id.button3);
          Button button_s = (Button) findViewById(R.id.button6);
+         Button button_l = (Button) findViewById(R.id.button7);
          listView1 = (ListView) findViewById(R.id.listview1);
          textView = (TextView) findViewById(R.id.textView);
 
@@ -80,6 +81,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        button_l.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,LayoutInflaterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
 
         List<Map<String,Object>> mapList = new ArrayList<Map<String,Object>>();
         for(int i=0;i<3;i++) {
@@ -99,20 +109,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Log.d("xdh","onClick");
-                Toast.makeText(MainActivity.this,"you clickd "+roles[position],Toast.LENGTH_SHORT).show();
-            }
-        });
-        listView1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(MainActivity.this,"you clickd "+roles[position],Toast.LENGTH_SHORT).show();
-            }
 
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-                Toast.makeText(MainActivity.this,"nothing selected",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"clicked",Toast.LENGTH_SHORT).show();
             }
         });
+//        listView1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//            @Override
+//            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//                Toast.makeText(MainActivity.this,"you clickd "+roles[position],Toast.LENGTH_SHORT).show();
+//            }
+//
+//            @Override
+//            public void onNothingSelected(AdapterView<?> parent) {
+//                Toast.makeText(MainActivity.this,"nothing selected",Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
 
     }
